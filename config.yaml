@@ -1,0 +1,27 @@
+dataset_params:
+  im_train_path: 'D:\ObjDet\VOCtrain\VOC2007\JPEGImages'
+  ann_train_path: 'D:\ObjDet\VOCtrain\VOC2007\Annotations'
+  im_test_path: 'D:\ObjDet\VOCtest\VOC2007\JPEGImages'
+  ann_test_path: 'D:\ObjDet\VOCtest\VOC2007\Annotations'
+  
+
+model_params:
+  train_backbone : False
+  num_queries : 100
+  d_model : 256
+  num_heads : 8
+  num_layers : 6
+  dropout_rate : 0.1
+  min_im_size : 600
+  max_im_size : 1000
+  aux_loss : False
+  num_classes : 21
+
+train_params:
+  task_name: 'detr'
+  seed : 1111
+  batch_size: 2
+  niters : 5000
+  print_every_n : 100
+  save_every_n : 1000
+
