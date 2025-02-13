@@ -18,7 +18,6 @@ model_params:
   num_classes : 21
 
 train_params:
-  task_name: 'detr'
   seed : 1111
   batch_size: 2
   niters : 5000
