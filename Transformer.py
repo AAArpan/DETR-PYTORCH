@@ -237,28 +237,3 @@ class Transformer(nn.Module):
         decoder_output = self.decoder(target, query_embed , encoder_output, src_mask=None, tgt_mask=None)
         return decoder_output
 
-
-# x = torch.randn(2, 512, 7, 7)
-# po = PositionEmbeddingSine(256)
-# mask = torch.ones(2, 7, 7).bool()
-# pos_embed = po(x, mask)
-# query_embed = nn.Embedding(100, 512)
-
-# output = transformer(x, query_embed.weight, pos_embed, mask)
-
-
-
-
-
-# # Test multihead attention
-# d_model = 512
-# num_heads = 8
-# seq_len = 10
-# batch_size = 32
-# ma = MultiheadAttention(d_model, num_heads)
-# Q = torch.randn(batch_size, seq_len, d_model)
-# K = torch.randn(batch_size, seq_len, d_model)
-# V = torch.randn(batch_size, seq_len, d_model)
-# output = ma(Q, K, V)
-# print(output.shape)
-# print(output)
