@@ -38,8 +38,3 @@ class PositionEmbeddingSine(nn.Module):
         pos = torch.cat((pos_y, pos_x), dim=3).permute(0, 3, 1, 2)
         return pos # (3, 128, 8, 8)
 
-# x = torch.randn(2, 512, 19, 25)
-# po = PositionEmbeddingSine(256)
-# mask = torch.ones(2, 19, 25).bool()
-# pos_embed = po(x, mask)
-# print(pos_embed.shape)
