@@ -137,16 +137,3 @@ def compute_sample_loss(o_bbox, t_bbox, o_cl, t_cl, n_queries=100, num_classes=2
     
     return loss_class, loss_bbox, loss_giou
 
-
-
-
-
-
-# backbone_params = [p for n, p in detr.named_parameters() if 'backbone.' in n]
-# transformer_params = [p for n, p in detr.named_parameters() if 'backbone.' not in n]
-
-
-
-# flops = FlopCountAnalysis(detr, x)
-# flops.total()
-
