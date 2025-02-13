@@ -1,8 +1,8 @@
 dataset_params:
-  im_train_path: 'D:\ObjDet\VOCtrain\VOC2007\JPEGImages'
-  ann_train_path: 'D:\ObjDet\VOCtrain\VOC2007\Annotations'
-  im_test_path: 'D:\ObjDet\VOCtest\VOC2007\JPEGImages'
-  ann_test_path: 'D:\ObjDet\VOCtest\VOC2007\Annotations'
+  im_train_path: '....\VOC2007\JPEGImages'
+  ann_train_path: '....\Annotations'
+  im_test_path: '....\JPEGImages'
+  ann_test_path: '....\Annotations'
   
 
 model_params:
